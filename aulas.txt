@@ -1,0 +1,12 @@
+para criar o projeto:
+  composer create-project --prefer-dist laravel/lumen api-series
+
+para levantar a aplicação:
+  php -S localhost:8000 -t public
+
+para criar as migrations:
+  php artisan make:migration criar_tabela_series --create=series
+  php artisan make:migration criar_tabela_episodios --create=episodios
+
+para executar as migrations:
+  php artisan migrate
