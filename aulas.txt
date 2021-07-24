@@ -10,3 +10,16 @@ para criar as migrations:
 
 para executar as migrations:
   php artisan migrate
+
+para instalar o firebase/php-jwt, execute o comando:
+  composer require firebase/php-jwt
+
+para criar a migration para a tabela de usuários:
+  php artisan make:migration criar_tabela_usuarios --create=usuarios
+
+para gerar o seeder de usuário:
+  php artisan make:seeder UsuarioSeeder
+  ... php artisan migrate
+
+para inserir o usuário no banco, chame o seeder:
+  php artisan db:seed
